@@ -1,0 +1,293 @@
+html{
+    /* background-color: red; */
+}
+body{
+    display: flex;
+    flex-direction: column;
+    font-family: sans-serif;
+    /* font-family: Arial, Helvetica, sans-serif; */
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    /* font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; */
+    /* font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; */
+    /* font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; */
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    /* font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; */
+    /* font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; */
+    background-color: rgba(187, 232, 245, 0.805);
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+
+header{
+    display: flex;
+    padding: 0 30px;
+    gap: 10px;
+    height: 11vh;
+    /* background-color: red; */
+    align-items: center;
+    position:relative;
+    z-index:2;
+
+}
+
+header h1{
+    /* font-size: 180%; */
+    font-size: 26px;
+}
+header nav{
+    margin-left: auto;
+    display: flex;
+    gap: 20px;
+    list-style: none;
+}
+header nav a{
+    text-decoration: none;
+    color: #808080;
+}
+header nav a:hover{
+    color: rgb(23 9 135);
+}
+header nav a.active{
+    color: #000000;
+}
+.sec-1{
+    display: flex;
+    height: 32vh;
+    padding: 0 20px 20px 30px;
+    align-items: end;
+}
+.product-header{
+    /* margin-top: auto; */
+    width: 30vw;
+}
+.product-header h2{
+    font-size: 30px;
+}
+.product-header h2:last-of-type{
+    /* color: red; */
+    margin-bottom: 10px;
+}
+.sec-1 div:nth-child(2){
+    width: 30vw;
+    margin-left: auto;
+}
+.sec-2{
+    display: flex;
+    background-color: white;
+    padding: 20px 30px;
+    height: 48vh;
+    max-height: max-content;
+
+}
+.sec-2 > div:nth-child(1){
+    width: 30vw;
+    box-sizing: border-box;
+    padding: 0 10px 20px 10px;
+}
+.sec-2 > div:nth-child(2){
+    flex: 1;
+    padding: 0 20px;
+    display: flex;
+    justify-content: center;
+    width: 30vw;
+    /* border: 1px solid grey; */
+}
+
+.sec-2 > div:nth-child(2) img{
+    position: relative;
+    height: 80vh;
+    height: 180%;
+    bottom: 40vh;
+    /* overflow-x: hidden; */
+    /* position: absolute; */
+    /* width: 30vw; */
+}
+.sec-2 > div:last-child{
+    width: 30vw;
+    margin-left: auto;
+}
+.product-card{
+    display: flex;
+    height: 40px;
+    padding: 10px;
+    background: -webkit-linear-gradient(left, rgba(174, 228, 243, 0.705), rgba(174, 228, 243, 0.805));
+    align-items: center;
+    gap: 5px;
+}
+.product-card.yellow{
+    background: -webkit-linear-gradient(left, rgba(247, 247, 119, 0.487), rgba(247, 247, 119, 0.587));
+
+}
+.product-card.red{
+    background: -webkit-linear-gradient(left,  rgba(223, 117, 117, 0.487),  rgba(223, 117, 117, 0.587));
+}
+.product-card.dark-b{
+    background: -webkit-linear-gradient(left, rgba(193, 122, 226, 0.487), rgba(193, 122, 226, 0.587));
+    
+
+}
+.product-card img{
+    width: 50px;
+    height: 50px;
+}
+.product-card > p:last-child{
+    margin-left: auto;
+    margin-right: 15px;
+    font-weight: bold;
+}
+.sec-2-1{
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    gap: 10px;
+    position: relative;
+    z-index: 1;
+    height: max-content;
+}
+.sec-2 .order-box{
+    display: flex;
+    height: 36px;
+    box-sizing: border-box;
+    gap: 20px;
+    /* height: 100px; */
+
+}
+.sec-2 .sizing-box{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    box-sizing: border-box;
+}
+.sec-2 .sizing-box .st{
+    width: 30px;
+
+    text-align: center;
+    margin: auto;
+    height: 94%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #000000;
+    border-right-style: none;
+}
+.sec-2 .sizing-box select{
+    flex: 1;
+    height: 100%;
+    /* border: 1px solid #000000 !important; */
+    outline: none;
+    
+}
+/* .sec-2 .sizing-box select::after{
+    padding-right: 100px;
+} */
+.sec-2 .order-box input{
+    display: flex;
+    width: 25%;
+    border: 1px solid #000000;
+    text-align: center;
+}
+.sec-2 > div:last-child{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.sec-2-1 .specs{
+    padding-bottom: 5px;
+    
+}
+.custom-details{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    transition: all .1s ease;
+}
+.custom-details .header{
+    display: flex;
+    height: 40px;
+    align-items: center;
+    padding: 0 5px;
+    border-bottom: 1px solid #808080;
+}
+.custom-details:has(button:hover){
+    .header{
+        background-color: white;
+    }
+}
+.custom-details:has(.header:hover){
+    button{
+        background-color: #808080;
+    }
+}
+.custom-details .header:hover{
+    background-color: #808080;
+}
+.custom-details:has(.header:active){
+    button{
+        background-color: rgb(119, 136, 153);
+    }
+}
+.custom-details .header:active{
+    background: -webkit-linear-gradient(left, rgba(119, 136, 153,.5),rgb(119, 136, 153));
+    border-color: #4e5d71;
+}
+.custom-details .header h3{
+    font-size: 14px;
+    letter-spacing: 1px;
+    font-weight: normal;
+}
+.custom-details button{
+    width: 25px;
+    height: 25px;
+    margin-left: auto;
+    border: none;
+}
+
+.custom-details .details{
+    height: max-content;
+    text-align: center;
+    /* padding: 10px 10px; */
+    line-height: 20px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+}
+.custom-details .details h4{
+    margin: 3px 0;
+    font-style: italic;
+    font-size: 17px;
+}
+    
+button.outline{
+    border: 1px solid #000000;
+
+}
+button.outline.dark{
+    border-color: #000000;
+    /* color: #000000; */
+    background-color: white;
+}
+button.solid.dark{
+    background-color: #000000;
+    color: white;
+    border: none;
+}
+button.md{
+    width: 150px;
+    height: 40px;
+}
+
+.sec-2-1 > div:last-child{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.sec-2-1 > div:last-child button{
+    cursor: pointer;
+    flex: 1;
+}
+.display-none{
+    /* display: none; */
+                                        }
+                                                                               
